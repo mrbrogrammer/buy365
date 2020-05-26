@@ -1,0 +1,99 @@
+{
+  "name": "gatsby-shopify-starter",
+  "private": false,
+  "description": "A simple starter to build a blazing fast Shopify store quickly with Gatsby",
+  "version": "0.1.0",
+  "author": "Simphiwe Madi <simphiwe.madi@yahoo.com>",
+  "engines": {
+    "node": "=> 10.13 < 10.11"
+  },
+  "dependencies": {
+    "shopify-buy": "^2.10.0",
+    "@emotion/core": "^10.0.22",
+    "@emotion/styled": "^10.0.22",
+    "babel-plugin-styled-components": "^1.10.7",
+    "gatsby": "^2.21.19",
+    "gatsby-image": "^2.2.29",
+    "gatsby-plugin-google-analytics": "^2.0.13",
+    "gatsby-plugin-layout": "^1.0.11",
+    "gatsby-plugin-manifest": "^2.2.23",
+    "gatsby-plugin-offline": "^3.0.16",
+    "gatsby-plugin-react-helmet": "^3.1.13",
+    "gatsby-plugin-root-import": "^2.0.5",
+    "gatsby-plugin-sharp": "^2.2.32",
+    "gatsby-plugin-styled-components": "^3.3.1",
+    "gatsby-source-filesystem": "^2.1.33",
+    "gatsby-source-shopify": "^3.0.24",
+    "gatsby-transformer-sharp": "^2.3.0",
+    "js-yaml": "^3.13.1",
+    "lodash": "^4.17.15",
+    "prop-types": "^15.7.2",
+    "querystringify": "^2.0.0",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-headroom": "^3.0.0",
+    "react-helmet": "^5.2.1",
+    "react-stripe-checkout": "^2.6.3",
+    "semantic-ui": "^2.4.2",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.88.2",
+    "set-value": "^2.0.1",
+    "styled-components": "^5.1.0"
+  },
+  "keywords": [
+    "gatsby",
+    "shopify",
+    "ecommerce",
+    "store"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "format": "prettier --write \"src/**/*.js\"",
+    "@testing-library/react": "^9.3.0",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-remove-graphql-queries": "^2.7.5",
+    "babel-plugin-styled-components": "^1.10.6",
+    "cross-env": "^5.2.0",
+    "dotenv": "^8.1.0",
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.1.0",
+    "eslint-loader": "^3.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "dev": "gatsby develop",
+    "lint": "eslint '**/*.{js,jsx}' --quiet",
+    "deploy": "rimraf .cache && gatsby build --prefix-paths && gh-pages -d public",
+    "test": "is-ci \"test:coverage\" \"test:watch\"",
+    "husky": "^3.0.4",
+    "identity-obj-proxy": "^3.0.0",
+    "lint-staged": "^9.2.5",
+    "prettier": "^1.18.2",
+    "regenerator-runtime": "^0.13.3",
+    "rimraf": "^3.0.0",
+    "start-server-and-test": "^1.10.0"
+  },
+  "devDependencies": {
+    "@craco/craco": "^5.6.4",
+    "@semantic-ui-react/craco-less": "^1.2.1",
+    "prettier": "^1.15.2",
+    "semantic-ui-less": "^2.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
